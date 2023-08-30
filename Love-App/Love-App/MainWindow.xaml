@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Love_App"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinWidth="500" MinHeight="350">
+        Title="MainWindow" Height="450" Width="800" MinWidth="500" MinHeight="350" WindowStartupLocation="CenterScreen" WindowState="Maximized">
 	<Grid>
 		<Grid.RowDefinitions>
-			<RowDefinition Height="1.5*"></RowDefinition>
+			<RowDefinition Height="1*"></RowDefinition>
 			<RowDefinition Height="0.2*"/>
 			<RowDefinition Height="3*"/>
 			<RowDefinition Height="3*"/>
@@ -43,12 +43,12 @@
             <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
         </Grid>
         
-        <Viewbox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
+        <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
 			<Label
-				Content="Love-App" FontSize="72" 
-				HorizontalAlignment="Center" VerticalAlignment="Center" Margin="96,0" Height="178" Grid.RowSpan="2" Width="300" FontFamily="Monotype Corsiva"
+				Content="Love-App" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" 
+				HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Monotype Corsiva"
 			/>
-		</Viewbox>
+		</Grid>
 
         <Grid Grid.Row="0" Grid.Column="0">
             <Grid.RowDefinitions>
