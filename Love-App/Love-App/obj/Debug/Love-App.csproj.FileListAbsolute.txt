@@ -1,0 +1,15 @@
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\bin\Debug\Love-App.exe.config
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\bin\Debug\Love-App.exe
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\bin\Debug\Love-App.pdb
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.csproj.AssemblyReference.cache
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\MainWindow.g.cs
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\App.g.cs
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App_MarkupCompile.cache
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App_MarkupCompile.lref
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\MainWindow.baml
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.g.resources
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love_App.Properties.Resources.resources
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.csproj.GenerateResource.cache
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.csproj.CoreCompileInputs.cache
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.exe
+C:\Users\ricpe\OneDrive - Berufskolleg Bergisch Gladbach\Desktop\Schule-BKGL\HIT12\Love-App\Love-App\Love-App\obj\Debug\Love-App.pdb
