@@ -42,11 +42,13 @@
             <Line Grid.Row="3" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
             <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
         </Grid>
-        
+
         <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
-			<Label
-				Content="Love-App" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" 
-				HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Monotype Corsiva"
+            
+            
+            <TextBlock
+				 Text="Love-App"
+				 Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}"  Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" FontFamily="Monotype Corsiva" HorizontalAlignment="Stretch" VerticalAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
 			/>
 		</Grid>
 
@@ -68,6 +70,7 @@
         </Grid>
         
         <Grid Grid.Row="1" Grid.ColumnSpan="4">
+            
             <Rectangle Fill="Black" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" Stroke="Black" StrokeThickness="2" Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}"/>
         </Grid>
     </Grid>
