@@ -98,7 +98,7 @@
                 <Rectangle Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" Fill="Gray" Opacity="0.75"></Rectangle>
             </Grid>
             <Grid Grid.Column="2" Grid.ColumnSpan="1" Grid.RowSpan="1" Grid.Row="2">
-                <Image  Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Source="lol.jpg" Stretch="Fill"/>
+                <Image  Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Source="model_goth.jpg" Stretch="Fill"/>
             </Grid>
             
         </Grid>
@@ -119,7 +119,9 @@
             </Grid.RowDefinitions>
             <Ellipse Grid.Column="1" Grid.Row="3" Fill="Red"></Ellipse>
             <Ellipse Grid.Column="2" Grid.Row="3" Fill="Green"></Ellipse>
-            <Rectangle Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1"  Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Fill="Gray" Opacity="0.75" />
+            <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
+            <Rectangle   Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Fill="Gray" Opacity="0.75" />
+            </Grid>
         </Grid>
     </Grid>
 </Window>

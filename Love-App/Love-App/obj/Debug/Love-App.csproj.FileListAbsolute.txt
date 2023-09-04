@@ -28,3 +28,19 @@ C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.GenerateRe
 C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.CoreCompileInputs.cache
 C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.exe
 C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.pdb
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\Love-App.exe.config
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\Love-App.exe
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\Love-App.pdb
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.AssemblyReference.cache
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\MainWindow.g.cs
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\App.g.cs
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_MarkupCompile.cache
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_MarkupCompile.lref
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\MainWindow.baml
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.g.resources
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love_App.Properties.Resources.resources
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.GenerateResource.cache
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.CoreCompileInputs.cache
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.exe
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.pdb
+D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_Content.g.cs

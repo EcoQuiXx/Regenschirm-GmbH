@@ -97,5 +97,11 @@
   <ItemGroup>
     <Resource Include="lol.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="model_goth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="egirl.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
