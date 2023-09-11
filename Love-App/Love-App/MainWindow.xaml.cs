@@ -35,5 +35,18 @@ namespace Love_App
             var nameBindingObject = new Binding("Name");
             nameBindingObject.Source = personDetails;
         }*/
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            double aspectRatio = 800.0 / 450.0; // Change these values to your initial aspect ratio.
+
+            // Calculate the new width and height while maintaining the aspect ratio.
+            double newWidth = e.NewSize.Width;
+            double newHeight = newWidth / aspectRatio;
+
+            // Set the new size for the window.
+            this.Width = newWidth;
+            this.Height = newHeight;
+        }
     }
 }
