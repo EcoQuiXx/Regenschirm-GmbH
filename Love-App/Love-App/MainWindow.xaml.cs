@@ -24,5 +24,16 @@ namespace Love_App
         {
             InitializeComponent();
         }
+        /*private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var personDetails = new Person()
+            {
+                Name = "John",
+                Birthdate = DateTime.Parse("2001-02-03")
+            };
+
+            var nameBindingObject = new Binding("Name");
+            nameBindingObject.Source = personDetails;
+        }*/
     }
 }

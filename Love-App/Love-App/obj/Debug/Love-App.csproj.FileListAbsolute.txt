@@ -44,3 +44,4 @@ D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.cspr
 D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.exe
 D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.pdb
 D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_Content.g.cs
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_Content.g.cs
