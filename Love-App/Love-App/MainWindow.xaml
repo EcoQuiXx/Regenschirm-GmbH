@@ -38,9 +38,10 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="1*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Line Grid.Row="1" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
-            <Line Grid.Row="3" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
-            <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
+
+            <Line Grid.Row="1" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" Cursor="Hand" />
+            <Line Grid.Row="3" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" Cursor="Hand" />
+            <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" Cursor="Hand" />
         </Grid>
 
         <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
@@ -118,10 +119,10 @@
                 <RowDefinition Height="25"></RowDefinition>
             </Grid.RowDefinitions>
             <Grid Grid.Column="1" Grid.Row="3">
-                <TextBlock Text="❌" Foreground="Red" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-28,0,-12" TextDecorations="{x:Null}"  />
+                <TextBlock Text="❌" Foreground="Red" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-28,0,-12" TextDecorations="{x:Null}" Cursor="Hand"  />
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2">
-                <TextBlock Text="❤️" Foreground="Green" TextAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" VerticalAlignment="Center" Margin="0,-28,0,-12"  />
+                <TextBlock Text="❤️" Foreground="Green" TextAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" VerticalAlignment="Center" Margin="0,-28,0,-12" Cursor="Hand"  />
             </Grid>
             <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
                 <Rectangle   Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Fill="Gray" Opacity="0.75" />
@@ -133,7 +134,7 @@
                     </Grid.RowDefinitions>
                     <Grid Grid.Row="0" Grid.RowSpan="1">
                         <TextBlock  Grid.Row="0" Text="Name,21" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" FontFamily="Monotype Corsiva" ></TextBlock>
-                        
+
                     </Grid>
                     <Grid Grid.Row="1">
                         <Grid.RowDefinitions>
@@ -141,8 +142,8 @@
                             <RowDefinition Height="1*"></RowDefinition>
                         </Grid.RowDefinitions>
                         <Grid>
-                    <TextBlock Grid.Row="0" TextAlignment="Left"  Text="Hobbies:" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" FontFamily="Monotype Corsiva" />
-                    </Grid>
+                            <TextBlock Grid.Row="0" TextAlignment="Left"  Text="Hobbies:" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" FontFamily="Monotype Corsiva" />
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
