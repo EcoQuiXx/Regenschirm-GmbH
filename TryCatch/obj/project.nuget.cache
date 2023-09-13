@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mdPTDIomnG4dhpl5coY9OSTzX+4nt22mw1Z2GRU5EoN/G8JMRnEAjfeNl0wAw4gUIXmtcWVcxURVEHxVTwV+Lg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Ben\\source\\repos\\TryCatch\\TryCatch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ben\\.nuget\\packages\\mysqlconnector\\2.2.7\\mysqlconnector.2.2.7.nupkg.sha512"
+  ],
+  "logs": []
+}
