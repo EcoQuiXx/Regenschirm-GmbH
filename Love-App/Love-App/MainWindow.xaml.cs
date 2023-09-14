@@ -38,7 +38,7 @@ namespace Love_App
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {
-            double aspectRatio = 400.0 / 225.0; // Change these values to your initial aspect ratio.
+            double aspectRatio = 800.0 / 450.0; // Change these values to your initial aspect ratio.
 
             // Calculate the new width and height while maintaining the aspect ratio.
             double newWidth = e.NewSize.Width;
