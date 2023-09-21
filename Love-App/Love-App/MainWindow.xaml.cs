@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Drawing;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -24,6 +25,7 @@ namespace Love_App
         {
             InitializeComponent();
         }
+
         /*private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var personDetails = new Person()
@@ -47,6 +49,23 @@ namespace Love_App
             // Set the new size for the window.
             this.Width = newWidth;
             this.Height = newHeight;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            
+            int OpenState = 1;
+
+            if (OpenState ==0)
+            {
+                DropDown.Visibility = Visibility.Collapsed;
+            }
+            else if (OpenState == 1)
+            {
+                DropDown.Visibility = Visibility.Visible;
+            }
+
+            OpenState = (OpenState + 1) % 2;
         }
     }
 }

@@ -101,6 +101,7 @@
     <Resource Include="model_goth.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="RegenschirmGmbH.png" />
     <Resource Include="blurred-valentine-s-day-wallpaper_23-2148819570.jpg" />
     <Content Include="egirl.jfif" />
   </ItemGroup>
