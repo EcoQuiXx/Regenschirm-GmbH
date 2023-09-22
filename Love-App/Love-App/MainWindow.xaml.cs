@@ -50,22 +50,20 @@ namespace Love_App
             this.Width = newWidth;
             this.Height = newHeight;
         }
-
+            bool OpenState = true;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             
-            int OpenState = 1;
-
-            if (OpenState ==0)
+            if (OpenState ==false)
             {
                 DropDown.Visibility = Visibility.Collapsed;
             }
-            else if (OpenState == 1)
+            else if (OpenState == true)
             {
                 DropDown.Visibility = Visibility.Visible;
             }
 
-            OpenState = (OpenState + 1) % 2;
+            OpenState = !OpenState;
         }
     }
 }
