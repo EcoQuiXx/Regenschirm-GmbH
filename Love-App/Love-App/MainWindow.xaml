@@ -167,13 +167,14 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="DropDown" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Visibility="Collapsed" >
+        <Grid x:Name="DropDown" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Visibility="Visible" >
             <Grid.Effect>
                 <DropShadowEffect/>
             </Grid.Effect>
             <Rectangle  Fill="White" ></Rectangle>
             <TextBlock Text="Profil" FontSize="25" FontFamily="Arial" TextAlignment="Center" VerticalAlignment="Center" Cursor="Hand"></TextBlock>
             <TextBlock Text="Ausloggen" FontSize="25" FontFamily="Arial" TextAlignment="Center" VerticalAlignment="Bottom" Cursor="Hand" ></TextBlock>
+            <Button Opacity="0.0"></Button>
         </Grid>
     </Grid>
 </Window>

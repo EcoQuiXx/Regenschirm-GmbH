@@ -13,6 +13,7 @@ using System.Drawing;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MySqlConnector;
 
 namespace Love_App
 {
@@ -37,6 +38,10 @@ namespace Love_App
             var nameBindingObject = new Binding("Name");
             nameBindingObject.Source = personDetails;
         }*/
+
+        int pageIndex = 1;
+        private int numberOfRecPerPage;
+        private enum PagingMode { First = 1, Next = 2, Previous = 3, Last = 4, PageCountChange = 5 };
 
         private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
         {

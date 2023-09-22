@@ -45,3 +45,20 @@ D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.exe
 D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.pdb
 D:\Repository Git Hub\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_Content.g.cs
 C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App_Content.g.cs
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\MySqlConnector.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Buffers.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Memory.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Numerics.Vectors.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\MySqlConnector.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Buffers.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Memory.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Numerics.Vectors.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Sign-Up.g.cs
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Sign-Up.baml
+C:\Unity\Regenschirm-GmbH\Love-App\Love-App\obj\Debug\Love-App.csproj.CopyComplete
