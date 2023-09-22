@@ -28,30 +28,6 @@
             <Image  Grid.ColumnSpan="4" Grid.RowSpan="5" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Source="blurred-valentine-s-day-wallpaper_23-2148819570.jpg" Stretch="Fill"/>
 
 
-
-
-            <Grid Grid.Row="0" Grid.Column="3">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                    <RowDefinition Height="1*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Line Grid.Row="1" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
-                <Line Grid.Row="3" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
-                <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
-            </Grid>
-
-
-
             <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="0.5*"></RowDefinition>
@@ -180,9 +156,10 @@
                     </Border>
                 </Grid>
                 <Grid Grid.Row="15" Grid.Column="2">
-                    <Button Content="Einloggen"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="150" Height="25" FontWeight="Bold" Background="#FFFAEDED" />
+                    <Button x:Name="LoginButton" Content="Einloggen"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="150" Height="25" FontWeight="Bold" Background="#FFFAEDED" Click="LoginClick" />
                 </Grid>
             </Grid>
         </Grid>
+        <Frame x:Name="Login"></Frame>
     </Grid>
 </Page>

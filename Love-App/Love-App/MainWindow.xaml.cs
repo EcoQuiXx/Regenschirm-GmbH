@@ -39,11 +39,9 @@ namespace Love_App
             nameBindingObject.Source = personDetails;
         }*/
 
-        int pageIndex = 1;
-        private int numberOfRecPerPage;
-        private enum PagingMode { First = 1, Next = 2, Previous = 3, Last = 4, PageCountChange = 5 };
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)      // Keep Aspect Ratio together
         {
             double aspectRatio = 800.0 / 450.0; // Change these values to your initial aspect ratio.
 
@@ -56,19 +54,35 @@ namespace Love_App
             this.Height = newHeight;
         }
             bool OpenState = true;
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)             // Dropdown click event
         {
             
-            if (OpenState ==false)
+            if (OpenState ==false)                                              //By a false state Collapse
             {
                 DropDown.Visibility = Visibility.Collapsed;
             }
-            else if (OpenState == true)
+            if (OpenState == true)                                         //By a true state make Visible
             {
                 DropDown.Visibility = Visibility.Visible;
             }
+            OpenState = !OpenState;                                             // Flip State
+        }
 
-            OpenState = !OpenState;
+        private void ClickLogOut(object sender, RoutedEventArgs e)
+        {
+                Main.Content = new Sign_Up();
+        }
+        public void LoginClick(object sender, RoutedEventArgs e)
+        {
+            try 
+            { 
+            Main.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
+            }
+
+            catch(Exception ex)
+            {
+                Console.WriteLine("Exeption during navigation: " + ex.Message);
+            }
         }
     }
 }

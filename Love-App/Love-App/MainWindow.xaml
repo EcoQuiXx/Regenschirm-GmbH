@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="StartSeite" Height="450" Width="800" MinWidth="750" MinHeight="400" SizeChanged="Window_SizeChanged" WindowStartupLocation="CenterScreen" WindowState="Maximized">
     <Grid>
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
             <RowDefinition Height="0.2*"/>
@@ -43,10 +44,10 @@
             <Line Grid.Row="3" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
             <Line Grid.Row="5" Grid.Column="1" Fill="Black"  X1="0" Y1="0" X2="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Y2="0" Stroke="Black" StrokeThickness="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" />
             <Grid Grid.Column="1" Grid.Row="1" Grid.RowSpan="5">
-                <Button Opacity="0.1" Cursor="Hand" Click="Button_Click"></Button>
+                <Button Opacity="0.0" Cursor="Hand" Click="Button_Click"></Button>
             </Grid>
         </Grid>
-        
+
         <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.5*"></RowDefinition>
@@ -131,17 +132,23 @@
                     <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="1" Text="❌" Foreground="Red" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" HorizontalAlignment="Center" Margin="0,-28,0,-12" VerticalAlignment="Center"  />
-                <Button Grid.Column="1" Opacity="0.1" Cursor="Hand" FontFamily="Arial" ></Button>
+                <Button Grid.Column="1" Opacity="0.0" Cursor="Hand" FontFamily="Arial" ></Button>
             </Grid>
             <Grid Grid.Row="3" Grid.Column="2" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="0.5*"></ColumnDefinition>
-                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="5*"></ColumnDefinition>
                     <ColumnDefinition Width="0.5*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                
-                <TextBlock Grid.Column="1" FontFamily="Arial"  Text="❤️" Foreground="Green" TextAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" VerticalAlignment="Center" TextDecorations="{x:Null}" HorizontalAlignment="Center"  />
-                <Button Grid.Column="1" Opacity="0.1" Cursor="Hand" ></Button>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                    <RowDefinition Height="5*"></RowDefinition>
+                    <RowDefinition Height="0.2*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid Grid.Column="1" Grid.Row="1">
+                <TextBlock   FontFamily="Calibri Light"  Text="❤️" Foreground="Green" TextAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" VerticalAlignment="Center" TextDecorations="{x:Null}" HorizontalAlignment="Center"  />
+                <Button  Opacity="0.0" Cursor="Hand" ></Button>
+                </Grid>
             </Grid>
             <Grid Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1">
                 <Rectangle   Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Fill="Gray" Opacity="0.75" />
@@ -167,14 +174,24 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="DropDown" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Visibility="Visible" >
+        <Grid x:Name="DropDown" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" Visibility="Collapsed" >
+            
             <Grid.Effect>
                 <DropShadowEffect/>
             </Grid.Effect>
-            <Rectangle  Fill="White" ></Rectangle>
-            <TextBlock Text="Profil" FontSize="25" FontFamily="Arial" TextAlignment="Center" VerticalAlignment="Center" Cursor="Hand"></TextBlock>
-            <TextBlock Text="Ausloggen" FontSize="25" FontFamily="Arial" TextAlignment="Center" VerticalAlignment="Bottom" Cursor="Hand" ></TextBlock>
-            <Button Opacity="0.0"></Button>
+            <Rectangle x:Name="BoxAnim" Fill="White"  ></Rectangle>
+            <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" Text="Profil" FontSize="25" FontFamily="Arial" VerticalAlignment="Center" TextAlignment="Center"  ></TextBlock>
+                <Button x:Name="Profil" Grid.Row="0" Opacity="0.0" Cursor="Hand"></Button>
+                <TextBlock Grid.Row="2" Text="Ausloggen" FontSize="25" FontFamily="Arial" VerticalAlignment="Center" TextAlignment="Center" ></TextBlock>
+                <Button x:Name="LogOut" Grid.Row="3" Opacity="0.0" Cursor="Hand" Click="ClickLogOut"></Button>
+            </Grid>
         </Grid>
+        <Frame Grid.ColumnSpan="4" Grid.RowSpan="5" x:Name="Main" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

@@ -24,5 +24,17 @@ namespace Love_App
         {
             InitializeComponent();
         }
+        public void LoginClick(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                Login.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
+            }
+
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exeption during navigation: " + ex.Message);
+            }
+        }
     }
 }
