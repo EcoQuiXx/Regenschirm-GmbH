@@ -22,26 +22,36 @@ namespace Love_App
     /// </summary>
     public partial class MainWindow : Window
     {
+        Sign_Up sign_Up = new Sign_Up();
+
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
-
-        /*private void Window_Loaded(object sender, RoutedEventArgs e)
+        public static void NavigateTo(Page page, string toPage)
         {
-            var personDetails = new Person()
-            {
-                Name = "John",
-                Birthdate = DateTime.Parse("2001-02-03")
-            };
+            NavigationService nav = NavigationService.GetNavigationService(page);
+            nav.Navigate(new Uri($"{toPage}.xaml", UriKind.RelativeOrAbsolute));
+        }
+    
 
-            var nameBindingObject = new Binding("Name");
-            nameBindingObject.Source = personDetails;
-        }*/
+    /*private void Window_Loaded(object sender, RoutedEventArgs e)
+    {
+        var personDetails = new Person()
+        {
+            Name = "John",
+            Birthdate = DateTime.Parse("2001-02-03")
+        };
+
+        var nameBindingObject = new Binding("Name");
+        nameBindingObject.Source = personDetails;
+    }*/
 
 
 
-        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)      // Keep Aspect Ratio together
+    private void Window_SizeChanged(object sender, SizeChangedEventArgs e)      // Keep Aspect Ratio together
         {
             double aspectRatio = 800.0 / 450.0; // Change these values to your initial aspect ratio.
 
@@ -70,7 +80,11 @@ namespace Love_App
 
         private void ClickLogOut(object sender, RoutedEventArgs e)
         {
-                Main.Content = new Sign_Up();
+            sign_Up.temp = Main;
+
+
+            Main.Navigate(new Sign_Up());
+    
         }
         public void LoginClick(object sender, RoutedEventArgs e)
         {

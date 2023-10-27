@@ -20,21 +20,27 @@ namespace Love_App
     /// </summary>
     public partial class Sign_Up : Page
     {
+        public Frame temp;
         public Sign_Up()
         {
             InitializeComponent();
+            
         }
         public void LoginClick(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                Login.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
-            }
+            if (temp == null)
+                MessageBox.Show("Fehler");
+            temp.Content = Main;
 
-            catch (Exception ex)
-            {
-                Console.WriteLine("Exeption during navigation: " + ex.Message);
-            }
+            //try
+            //{
+            //    Login.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
+            //}
+
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Exeption during navigation: " + ex.Message);
+            //}
         }
     }
 }
