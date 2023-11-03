@@ -25,46 +25,10 @@
             </Grid.ColumnDefinitions>
             <!-- Draws a diagonal line from (10,10) to (50,50). -->
 
-            <Image  Grid.ColumnSpan="4" Grid.RowSpan="5" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Source="blurred-valentine-s-day-wallpaper_23-2148819570.jpg" Stretch="Fill"/>
+            <Image Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="5" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"  Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Source="blurred-valentine-s-day-wallpaper_23-2148819570.jpg" Stretch="Fill"/>
 
+            
 
-            <Grid Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="0.5*"></RowDefinition>
-                    <RowDefinition Height="4*"></RowDefinition>
-                    <RowDefinition Height="0.5*"></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid Grid.Column="1" Grid.Row="1">
-                    <TextBlock
-                 Text="Smooch Finder" Grid.Column="1" Grid.Row="1"
-                 Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}"  Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" FontFamily="Monotype Corsiva" TextAlignment="Center" VerticalAlignment="Center" FontSize="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}" 
-            />
-                </Grid>
-            </Grid>
-
-
-
-            <Grid Grid.Row="0" Grid.Column="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition Height="0*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                </Grid.ColumnDefinitions>
-
-                <Ellipse Grid.Row="0" Grid.Column="1"
-                     
-                 Width="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
-                 Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"
-                 Stroke="Black"
-                 StrokeThickness="2">
-                    <Ellipse.Fill>
-                        <ImageBrush
-                         ImageSource="RegenschirmGmbH.png" Stretch="Uniform" />
-                    </Ellipse.Fill>
-                </Ellipse>
-            </Grid>
 
 
 
@@ -148,7 +112,7 @@
                     <TextBox VerticalContentAlignment="Center" HorizontalContentAlignment="Center" TextWrapping="Wrap" Text="Lieblingstiername eingeben" MaxHeight="25px" FontSize="15px" Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=Grid}}" Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=Grid}}"/>
                 </Grid>
                 <Grid Grid.Row="12" Grid.Column="2">
-                    <Button Content="Registrieren"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="150" Height="25" FontWeight="Bold" Background="#FFFAEDED" />
+                    <Button x:Name="RegButton" Content="Registrieren"  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="150" Height="25" FontWeight="Bold" Background="#FFFAEDED" Click="ClickReg" />
                 </Grid>
                 <Grid Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="3">
                     <Border BorderBrush="{x:Null}" Height="20" VerticalAlignment="Center">
@@ -160,6 +124,6 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Frame x:Name="Login"></Frame>
+        <Frame x:Name="Sign_Up1" ></Frame>
     </Grid>
 </Page>

@@ -28,28 +28,26 @@ namespace Love_App
         public MainWindow()
         {
             InitializeComponent();
-
+            Main.Navigate(new Sign_Up());
         }
         public static void NavigateTo(Page page, string toPage)
         {
             NavigationService nav = NavigationService.GetNavigationService(page);
             nav.Navigate(new Uri($"{toPage}.xaml", UriKind.RelativeOrAbsolute));
         }
-    
 
-    /*private void Window_Loaded(object sender, RoutedEventArgs e)
-    {
-        var personDetails = new Person()
+
+        /*private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Name = "John",
-            Birthdate = DateTime.Parse("2001-02-03")
-        };
+            var personDetails = new Person()
+            {
+                Name = "John",
+                Birthdate = DateTime.Parse("2001-02-03")
+            };
 
-        var nameBindingObject = new Binding("Name");
-        nameBindingObject.Source = personDetails;
-    }*/
-
-
+            var nameBindingObject = new Binding("Name");
+            nameBindingObject.Source = personDetails;
+        }*/
 
     private void Window_SizeChanged(object sender, SizeChangedEventArgs e)      // Keep Aspect Ratio together
         {
@@ -78,25 +76,22 @@ namespace Love_App
             OpenState = !OpenState;                                             // Flip State
         }
 
-        private void ClickLogOut(object sender, RoutedEventArgs e)
+        
+
+        private void ClickReg(object sender, RoutedEventArgs e)
         {
-            sign_Up.temp = Main;
-
-
+            //sign_Up.temp = Main;
             Main.Navigate(new Sign_Up());
-    
+
         }
         public void LoginClick(object sender, RoutedEventArgs e)
         {
-            try 
-            { 
-            Main.Navigate(new Uri("MainWindow.xaml", UriKind.Relative));
-            }
+            Main.Navigate(new Home());
+        }
 
-            catch(Exception ex)
-            {
-                Console.WriteLine("Exeption during navigation: " + ex.Message);
-            }
+        private void ClickLogIn(object sender, RoutedEventArgs e)
+        {
+            Main.Navigate(new Login());
         }
     }
 }
