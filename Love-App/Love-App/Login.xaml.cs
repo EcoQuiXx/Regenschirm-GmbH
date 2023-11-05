@@ -32,6 +32,7 @@ namespace Love_App
 
         private void ClickLogin(object sender, RoutedEventArgs e)
         {
+            MainWindow.database.LoginFeature(txtb_username.Text, txtb_password.Text);
             MainWindow.NavigateTo(this, "Home");
         }
     }

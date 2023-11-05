@@ -23,7 +23,18 @@ namespace Love_App
         public Home()
         {
             InitializeComponent();
-            
+            MainWindow.database.MatchFunction(listb_matchdata);
+        }
+
+        private void btn_smash_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Herzlichen Glückwunsch\nIhr wurdet erfolgreich gematched", "Match erfolgreich", MessageBoxButton.OK);
+        }
+
+        private void btn_pass_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Match abgelehnt\nNeuer Match wurde gefunden", "Match nicht erfolgreich", MessageBoxButton.OK);
+            MainWindow.database.MatchFunction(listb_matchdata);
         }
     }
 }

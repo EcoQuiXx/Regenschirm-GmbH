@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,15 +27,16 @@ namespace Love_App
             InitializeComponent();
             
         }
+
         public void LoginClick(object sender, RoutedEventArgs e)
         {
-            MainWindow.NavigateTo(this, "Home");
+            MainWindow.NavigateTo(this, "Login");
 
         }
 
-
         private void ClickReg(object sender, RoutedEventArgs e)
         {
+            MainWindow.database.AccountCreation(txtb_username.Text, txtb_password.Text, txtb_email.Text, txtb_question.Text, txtb_username.Text.Length, txtb_password.Text.Length, txtb_email.Text.Contains('@'));
             MainWindow.NavigateTo(this, "Login");
         }
     }
